@@ -1,7 +1,7 @@
 const Vue = require('vue');
 const VueRouter = require( 'vue-router').default;
 const Vuex = require('vuex').default;
-
+const VueResouce=require('vue-resource').default;
 const ServiceWorker = require('file-loader?name=sw.[hash:hex:3].[ext]!./serviceworker.js');
 const GlobalCSS = require('./css/global.scss');
 const Bulma = require('./css/bulma.scss');
@@ -15,7 +15,7 @@ if ('serviceWorker' in navigator) {
 
 Vue.use(VueRouter);
 Vue.use(Vuex);
-
+Vue.use(VueResouce);
 const routes = {};
 
 const components = require.context('./components', true, /.vue$/);
@@ -40,9 +40,11 @@ const store = new Vuex.Store({
 const router = new VueRouter({
   routes : [
     {path: '/', component: routes.home},
+    {path:'/author',component:routes.author},
+    {path:'/ACM',component:routes.ACM}
   ]
 });
-
+//console.log(routes,"ssss")
 const app = new Vue({
   el: '#app',
   router,

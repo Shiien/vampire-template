@@ -25,8 +25,11 @@ $input-shadow: none;
 
 $button-focus-border-color: $purple;
 
-@import "~bulma/bulma";
 
+
+@import "~bulma/bulma";
+//$menu-item-radius : 20px;
+$menu-list-border-left:200px;
 .element {
   &.is-loading {
     position: relative;

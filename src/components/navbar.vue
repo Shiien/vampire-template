@@ -36,7 +36,7 @@
     <div class="container">
       <div class="navbar-brand">
         <a class="navbar-item" href="https://bulma.io">
-          <img src="@r/logo.png" alt="NKOJ" width="112" height="28">
+          <img src="@r/BAOYINBAOSHI.jpg" alt="NKOJ" width="48" height="48">
         </a>
         <div class="navbar-burger burger" data-target="navMenu">
           <span></span>
@@ -48,6 +48,9 @@
       <div id="navMenu" class="navbar-menu">
         <div class="navbar-start">
           <nav-item to="/" icon="fa-home">主页</nav-item>
+          <nav-item to="/author" icon="fa-wifi">作者</nav-item>
+          <nav-item to="/ACM" icon="fa-heart">ACM训练</nav-item>
+
         </div>
 
         <div class="navbar-end">

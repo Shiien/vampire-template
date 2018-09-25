@@ -14,3 +14,35 @@
 .tile.is-child > *:not(:first-child) {
   padding: 0.7rem 1.5rem;
 }
+#header, #footer {
+  width: 100%;
+  height: 100px;
+  background: #ccc;
+}
+
+#container {
+  margin: 10px auto; /**左右设为auto，是为了让container在页面内居中**/
+}
+
+.mainBox {
+  float: right;
+  width: 84%;
+  height: 900px;
+  /*color: #000;*/
+  /*background: #faf;*/
+}
+
+.sideBox {
+  float: left;
+  width: 15%;
+  height: 600px;
+  /*color: #000;*/
+  /*background: #3f0;*/
+}
+
+#container:after { /**清除浮动**/
+  display: block;
+  visibility: hidden;
+  content: "";
+  clear: both;
+}
